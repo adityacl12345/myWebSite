@@ -1,0 +1,313 @@
+body {
+    background-image: url(images/image1.jpg);
+    margin: 0px;
+    max-width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(20,200,200,0.2);
+    margin-top: 10px;
+    padding-left: 20px;
+    border-radius: 50px;
+    border: 1px groove rgba(20,200,200,0.2);
+    border-bottom-style: groove;
+    position: sticky;
+    top: 0;
+}
+li {
+    float: left;
+    
+}
+li a {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+li a:hover {
+    color: aqua;
+    background-color: darkslategray;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 1px aqua;
+}
+#box1{
+    width: auto;
+    display: inline-block;
+    border: 2px solid aliceblue;
+    color: white;
+    margin: 80px;
+    margin-right: 200px;
+    margin-bottom: 0px;
+    padding-left: 145px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#box2 {
+    width: auto;
+    display: inline-block;
+    border: 2px solid aliceblue;
+    color: white;
+    margin-top: 0px;
+    margin-left: 80px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    padding-left: 145px;
+    padding-right: 45px;
+    padding-bottom: 45px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#p1 {
+    font-style: italic;
+}
+p {
+    margin: 0;
+}
+#divider1 {
+    margin: 70px;
+    margin-right: 180px;
+    width: auto;
+    border-width: 1px;
+    border-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px black;
+}
+#divider2 {
+    margin-right: 70px;
+    width: auto;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 0 10px 3px black;
+}
+#img img{
+    width: 150px;
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+    
+}
+#img1 img{
+    width: 150px;
+    top: 650px;
+    position: absolute;
+    left: 50px;
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+}
+#img2 img {
+    width: 150px;
+    height: 150px;
+    top: 600px;
+    position: absolute;
+    left: 50px;
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+}
+#img3 img {
+    width: 150px;
+    height: 150px;
+    top: 1090px;
+    position: absolute;
+    left: 50px;
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+}
+#img4 img {
+    width: 150px;
+    height: 150px;
+    top: 1550px;
+    position: absolute;
+    left: 50px;
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+}
+#head1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+#sidebar {
+    float: right;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: aquamarine;
+    color: darkslategray;
+    border-color: rgba(200,20,2,0.5);
+    box-shadow: 0 0 10px 1px darkslategray;
+    font-weight: 600;
+    cursor: pointer;
+}
+#sidebar:hover {
+    box-shadow: 0 0 10px 2px yellow;
+}
+#sidenav {
+    width: 0px;
+    top: 70px;
+    right: 0px;
+    height: 575px;
+    display: block;
+    transition: 0.5s;
+    background: linear-gradient(grey, rgba(20,235,180,0.5));
+    float: right;
+    position: absolute;
+    margin-top: 0px;
+    border-radius: 25px;
+}
+#sidenav a {
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    
+}
+#sidenav a:hover {
+    color: aqua;
+    background-color: darkslategray;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 1px darkslategray;
+}
+.row {
+    margin: auto;
+}
+.row,
+.row > .column {
+    padding: 50px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: 500px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    background-color: darkslategray;
+    color: antiquewhite;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.content img {
+    height: 180px;
+    width: 100%;
+    box-shadow: 0 0 10px 3px aqua;
+}
+.mySlide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    padding: 5px;
+    margin: auto;
+}
+.text {
+    display: none;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    left: 47%;
+    
+    text-align: center;
+    background-color: darkslategray;
+    color: aqua;
+    box-shadow: 0 0 10px 3px black;
+}
+
+#slider-box {
+    border: 2px solid aliceblue;
+    margin: 80px;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 3px black;
+    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+}
+#slider-box img{
+    height:100px;
+}
+#slide {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    left: 47%;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: aquamarine;
+    color: darkslategray;
+    border-color: rgba(200,20,2,0.5);
+    box-shadow: 0 0 10px 1px darkslategray;
+    font-weight: 600;
+    cursor: pointer;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#bye {
+    float: right;
+    transform: rotate(-25deg);
+    width: 300px;
+    position: relative;
+    top: 300px;
+    right:200px;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
