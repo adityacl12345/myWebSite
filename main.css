@@ -16,6 +16,8 @@ ul {
     border-bottom-style: groove;
     position: sticky;
     top: 0;
+    box-shadow: 0 0 10px 1px black;
+    z-index: 2;
 }
 li {
     float: left;
@@ -26,7 +28,9 @@ li a {
     color: aliceblue;
     text-align: center;
     padding: 14px;
+    text-shadow: 2px 2px 5px cyan;
     text-decoration: none;
+    font-size: 18px;
     font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 li a:hover {
@@ -35,29 +39,13 @@ li a:hover {
     border-radius: 25px;
     box-shadow: 0 0 10px 1px aqua;
 }
-#box1{
+#box{
     width: auto;
     display: inline-block;
     border: 2px solid aliceblue;
     color: white;
+    position: relative;
     margin: 80px;
-    margin-right: 200px;
-    margin-bottom: 0px;
-    padding-left: 145px;
-    padding-right: 45px;
-    padding-bottom: 45px;
-    border-radius: 25px;
-    box-shadow: 0 0 10px 3px black;
-    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-#box2 {
-    width: auto;
-    display: inline-block;
-    border: 2px solid aliceblue;
-    color: white;
-    margin-top: 0px;
-    margin-left: 80px;
     margin-right: 200px;
     margin-bottom: 20px;
     padding-left: 145px;
@@ -74,9 +62,18 @@ li a:hover {
 p {
     margin: 0;
 }
+#copy {
+    margin: 0;
+    color: antiquewhite;
+    font-size: 10px;
+    position: relative;
+    bottom: 3px;
+    left: 0px;
+}
 #divider1 {
     margin: 70px;
     margin-right: 180px;
+    margin-bottom: 0px;
     width: auto;
     border-width: 1px;
     border-color: aliceblue;
@@ -92,57 +89,15 @@ p {
 }
 #img img{
     width: 150px;
-    position: absolute;
-    top: 130px;
-    left: 50px;
-    border: 2px solid antiquewhite;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 3px black;
-    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
-    
-}
-#img1 img{
-    width: 150px;
-    top: 650px;
-    position: absolute;
-    left: 50px;
-    border: 2px solid antiquewhite;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 3px black;
-    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
-}
-#img2 img {
-    width: 150px;
     height: 150px;
-    top: 600px;
     position: absolute;
-    left: 50px;
+    top: -30px;
+    left: -30px;
     border: 2px solid antiquewhite;
     border-radius: 20px;
     box-shadow: 0 0 10px 3px black;
     background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
-}
-#img3 img {
-    width: 150px;
-    height: 150px;
-    top: 1090px;
-    position: absolute;
-    left: 50px;
-    border: 2px solid antiquewhite;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 3px black;
-    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
-}
-#img4 img {
-    width: 150px;
-    height: 150px;
-    top: 1550px;
-    position: absolute;
-    left: 50px;
-    border: 2px solid antiquewhite;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 3px black;
-    background: linear-gradient(to right, grey, rgba(20,235,180,0.4) );
+    z-index: 1;
 }
 #head1 {
     text-align: center;
@@ -161,7 +116,7 @@ p {
     cursor: pointer;
 }
 #sidebar:hover {
-    box-shadow: 0 0 10px 2px yellow;
+    box-shadow: 0 0 10px 2px yellowgreen;
 }
 #sidenav {
     width: 0px;
@@ -172,9 +127,10 @@ p {
     transition: 0.5s;
     background: linear-gradient(grey, rgba(20,235,180,0.5));
     float: right;
-    position: absolute;
+    position: fixed;
     margin-top: 0px;
     border-radius: 25px;
+    z-index: 2;
 }
 #sidenav a {
     display: block;
@@ -231,6 +187,9 @@ p {
     animation-duration: 1.5s;
     padding: 5px;
     margin: auto;
+    border: 3px solid darkslategray;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 3px black;
 }
 .text {
     display: none;
@@ -238,8 +197,7 @@ p {
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    left: 47%;
-    
+    bottom: 20px;
     text-align: center;
     background-color: darkslategray;
     color: aqua;
